@@ -4,7 +4,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        PrintWelcomeMessage();
+        PrintWelcomeMessage("Martin");
+    }
+    static void PrintWelcomeMessage(string name = "Terje")
+    {
+        Console.WriteLine($"Hei og velkommen {name}");
     }
 }
 
